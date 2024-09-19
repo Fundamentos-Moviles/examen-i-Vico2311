@@ -1,8 +1,5 @@
 // aqui se guardan los colores que utilizaremos en nuestra app
 // las variables se inicializan con const
-
-
-
 import 'package:flutter/material.dart';
 
 const colorPrincipal = Colors.green;
@@ -23,17 +20,26 @@ const int num = 1;
 const double num2 = 1.0;
 const bool band = false;
 
-const List lista = [
-  ///ID # TEXTONEGRITAS # TEXTONORMAL # NUMERO
-  '1#Text1#textN1#101',
-  '2#Text2#textN2#102',
-  '3#Text3#textN3#103',
-  '4#Text4#textN4#104',
-  '5#Text5#textN5#105',
-  '6#Text6#textN6#106',
-  '7#Text7#textN7#107',
-  '8#Text8#textN8#108',
+
+const List listaExamen =
+[
+  '5#28#23#Marzo#Alejandro#Ordaz#Cumpleañosdelprofesor#5',
+  '6#28#23#Marzo#Alejandro#Ordaz#Cumpleañosdelprofesor#5',
+  '7#28#23#Marzo#Alejandro#Ordaz#Cumpleañosdelprofesor#5',
+  '8#28#23#Marzo#Alejandro#Ordaz#Cumpleañosdelprofesor#5',
+  '9#28#23#Marzo#Alejandro#Ordaz#Cumpleañosdelprofesor#5',
+  '10#28#23#Marzo#Alejandro#Ordaz#Cumpleañosdelprofesor#5',
+  '11#28#23#Marzo#Alejandro#Ordaz#Cumpleañosdelprofesor#5',
+  '12#28#23#Marzo#Alejandro#Ordaz#Cumpleañosdelprofesor#5',
+  '13#28#23#Marzo#Alejandro#Ordaz#Cumpleañosdelprofesor#5',
+  '14#28#23#Marzo#Alejandro#Ordaz#Cumpleañosdelprofesor#5',
+  '15#28#23#Marzo#Alejandro#Ordaz#Cumpleañosdelprofesor#5',
+  '16#28#23#Marzo#Alejandro#Ordaz#Cumpleañosdelprofesor#5',
+
 ];
+//‘id # edad # dia de cumpleaños # mes de cumpleaños # Nombre # apellidos # descripción # num de estrellas en gris’,
+
+
 
 ///= [1, Text1, textN1, 101]
 

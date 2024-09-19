@@ -417,9 +417,7 @@ class _LoginState extends State<Login> {
               ],
             ),
           ),
-          Center(
 
-          ),
           Padding(
 
               padding: EdgeInsets.all(70.6),
@@ -508,6 +506,7 @@ class _LoginState extends State<Login> {
 
                     const SizedBox(height: 20.0,),
                     //ingresa tu contraseña
+
                     Align(
                       alignment: Alignment.centerLeft,
                       child: Padding(padding:

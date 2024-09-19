@@ -13,19 +13,27 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-        children: [    //crear contenedor la columna
+
+        children: [
+          Container(
+            color: con.fondo,
+
+          ),//crear contenedor la columna
           SingleChildScrollView(
+
               child:
               Column(
+
                 children: [
-                  createdCard(texto:"hola0",textoN: "Este es mi primer programa",id: "1",numero: "4443061979"),
-                  createdCard1(textoN:"hola0",texto: "Este es mi primer programa",id: "2",numero: "4443061979"),
-                  createdCard2(textoN:"hola0",texto: "Este es mi primer programa",id: "3",numero: "4443061979"),
+                  const SizedBox(height: 20.0,),
+                  createdCard(texto:"hola0",textoN: "Este es mi primer programa",id: "5",numero: "mi cumpleaños"),
+                  const SizedBox(height: 20.0,),
+                  createdCard1(textoN:"23 - Febrero",texto: "Victor Cabrera",id: "5",numero: "Mi cumpleaños"),
 
                 ],
               )
 
-          )
+          ),
 
         ],
       ),
@@ -79,13 +87,13 @@ class createdCard1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: 400, // ancho
-        height: 100,//largo
+        width: 480, // ancho
+        height: 90,//largo
         //color: Colors.blue,
-        padding: EdgeInsets.all(10.0),
+        padding: EdgeInsets.all(2.0),
         decoration: BoxDecoration(      ///                                juntos, marcará un error por
-          borderRadius: BorderRadius.circular(20),    ///                  incompatibilidad de atributos
-          color: Colors.grey, /// ------------------------------------>
+          borderRadius: BorderRadius.circular(10),    ///                  incompatibilidad de atributos
+          color: Colors.white, /// ------------------------------------>
         ),
 
         child: Column(
@@ -93,20 +101,37 @@ class createdCard1 extends StatelessWidget {
             Row(
               children: [
                 Expanded(
+
                     flex: 6,
                     child: Column(
                       children: [
-                        Text(textoN,
+                        Padding(padding:
+                        const EdgeInsets.only(left: 8.0),
+                        child:Align(
+                          alignment: Alignment.centerLeft,
+                          child:Text(textoN,
 
-                          style: TextStyle(
-                            fontSize: 20.0,
-                            fontWeight: FontWeight.w900,//negritas
-                            color: Colors.black,
+                            style: TextStyle(
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.w900,//negritas
+                              color: Colors.black,
+
+                            ),
+
 
                           ),
 
                         ),
-                        Text(texto)
+                        ),
+                        Padding(padding:
+                        const EdgeInsets.only(left: 8.0),
+                         child: Align(
+                            alignment: Alignment.centerLeft,
+                            child: Text(texto),
+                          ),
+                        ),
+
+
                       ],
                     )
                 ),
@@ -115,8 +140,12 @@ class createdCard1 extends StatelessWidget {
                     child: Row(
                       children: [
                         Expanded(child:
-                        Text(id,
-                            textAlign: TextAlign.right)
+                            Padding(padding:
+                            const EdgeInsets.only(left: 16.0,right: 16.0),
+                              child: Text(id,
+                                  textAlign: TextAlign.right),
+                    ),
+
                         )
 
                       ],
@@ -132,7 +161,11 @@ class createdCard1 extends StatelessWidget {
                       children: [
                         Expanded(
                             child:
-                            Text(numero)
+                                Padding(padding:
+                            const EdgeInsets.only(left: 8.0,),
+                                  child: Text(numero),
+    ),
+
                         )
 
                       ],

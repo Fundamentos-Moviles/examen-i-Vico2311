@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Login(),//llamar nueva clase logiin solo escribir el nombre de la clase alt+Enter para importar clase
+      home: Home(),//llamar nueva clase logiin solo escribir el nombre de la clase alt+Enter para importar clase
     );
   }
 }
